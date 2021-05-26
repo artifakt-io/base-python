@@ -8,7 +8,7 @@ WORKDIR /var/www/html/
 COPY requirements.* ./
 
 # dependency management
-RUN if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+RUN if [ -f requirements.txt ]; then pip install --no-cache-dir -r requirements.txt; fi
 
 COPY --chown=www-data:www-data . /var/www/html
 
