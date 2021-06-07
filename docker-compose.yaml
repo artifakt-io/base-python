@@ -9,7 +9,7 @@ services:
     volumes:
       - "data:/data"
     environment:
-      PHP_CONF_MEMORY_LIMIT: "-1"
+      PYTHON_FOO: "BAR"
 
 volumes:
   data:
