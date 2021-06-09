@@ -10,11 +10,11 @@ echo "------------------------------------------------------------"
 
 RUNTIME_NAME="Python"
 RUNTIME_LOGO="python.png"
-ARCHIVE_FILE=static-page-main
+ARCHIVE_FILE=main
 
 env
 
-curl -sSLO https://gitlab.com/djalal/static-page/-/archive/main/${ARCHIVE_FILE}.tar.gz && \
+curl -sSLO https://github.com/artifakt-io/base-html/archive/refs/heads/${ARCHIVE_FILE}.tar.gz && \
   tar -xzf ${ARCHIVE_FILE}.tar.gz -C /tmp && \
   mv /tmp/${ARCHIVE_FILE}/* /var/www/html && \
   chown -R www-data:www-data /var/www/html && \
